@@ -1,0 +1,16 @@
+<% 
+let page = 'home' //ページ名
+;%>
+<%- include('./_template-part/_head',{page:page});%>
+<%- include('./_template-part/_header',{page:page});%>
+<main class="main">
+  <div class="gallery" style="display:none;">
+    <img src="./images/8.jpg" class="gallery_image">
+  </div>
+  <video id="video" src="./videos/video1.mp4" muted playsinline loop></video>
+  <div id="container">
+  <div class="log"></div>
+  </div>
+
+</main>
+<%- include('./_template-part/_footer',{page:page}) ;%>
